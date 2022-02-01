@@ -1,0 +1,73 @@
+.reasons {
+  padding: 60px 0 68px 0;
+  text-align: center;
+  &__title {
+    @include Title;
+    margin-top: 65px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  &__item {
+    width: 350px;
+    text-align: center;
+  }
+  &__image {
+    min-height: 341px;
+    &-1 {
+      background: url("../img/reasons/mobile.png") center no-repeat;
+      background-size: contain;
+    }
+    &-2 {
+      background: url("../img/reasons/dish.png") center no-repeat;
+      background-size: contain;
+    }
+    &-3 {
+      background: url("../img/reasons/child.png") center no-repeat;
+      background-size: contain;
+    }
+  }
+  &__descr {
+    margin-top: 42px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #242424;
+  }
+}
+
+.swiper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  flex-wrap: wrap;
+}
+
+.reasons-slider {
+  padding-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .reasons {
+    &__item {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .swiper-wrapper {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 420px) {
+  .reasons {
+    &__title {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+}

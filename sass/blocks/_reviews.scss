@@ -1,0 +1,105 @@
+.reviews {
+  padding: 56px 0 58px 0;
+  .reviews-slider {
+    padding-bottom: 40px;
+  }
+  &__title {
+    @include Title;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 38px;
+  }
+  &__item {
+    width: 335px;
+  }
+  &__descr {
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    padding: 20px 20px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: "Circe-Light";
+    font-weight: 600;
+    color: #242424;
+  }
+  &__figure-one {
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: 40px;
+    border-left: 20px solid #eeeeee;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  &__figure-two {
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: 41px;
+    margin-top: -21px;
+    border-left: 18px solid #fff;
+    border-right: 18px solid #af424200;
+    border-bottom: 19px solid #ad404000;
+  }
+
+  &__item-info {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+  }
+  &-info__image {
+    width: 90px;
+    height: 90px;
+    &-1 {
+      background: url("../img/reviews/deineris.png") center no-repeat;
+    }
+    &-2 {
+      background: url("../img/reviews/taivin.png") center no-repeat;
+    }
+    &-3 {
+      background: url("../img/reviews/serseya.png") center no-repeat;
+    }
+  }
+  &-info__inner {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  &-info__name {
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #242424;
+    @include ExtraBold;
+  }
+  &-info__age {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #909090;
+  }
+}
+
+@media (max-width: 1110px) {
+  .reviews {
+    &__wrapper {
+      justify-content: space-between;
+    }
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .reviews {
+    &__wrapper {
+      justify-content: space-between;
+    }
+    &__title {
+      font-size: 29px;
+    }
+  }
+}

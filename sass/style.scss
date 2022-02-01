@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Circe-Regular", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+/* ----------- base ---------- */
+@import "base/mixins";
+
+/* ----------- blocks ---------- */
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/reasons";
+@import "blocks/info";
+@import "blocks/gratis";
+@import "blocks/reviews";
+@import "blocks/footer";
+
+/* ----------- libs ---------- */
+@import "libs/fonts";

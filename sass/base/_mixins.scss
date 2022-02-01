@@ -1,0 +1,38 @@
+@mixin Title {
+  font-family: "Circe-ExtraBold";
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #242424;
+  text-align: center;
+}
+
+@mixin ExtraBold {
+  font-family: "Circe-ExtraBold";
+  font-weight: 800;
+}
+
+@mixin btn-hover {
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, transparent, rgba(191, 226, 255, 0.3), transparent);
+    transition: left 0.7s;
+  }
+  &:hover:before,
+  &:active:before,
+  &:focus:before {
+    left: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+.gratis {
+  padding: 65px 0 50px 0;
+  background: url("../img/gratis_bg.png") center center / cover no-repeat;
+  text-align: center;
+  &__descr {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+  }
+  &__btn {
+    padding: 30px 40px;
+    background-color: #c8ead6;
+    margin-top: 45px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(63deg, #12bc82 0%, #bfdf2c 100%);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ffffff;
+    span {
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    @media (min-width: 1200px) {
+      position: relative;
+      overflow: hidden;
+      transition: 0.8s !important;
+      @include btn-hover;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .gratis {
+    padding-top: 56px;
+    background: url("../img/gratis_mob.png") center center / cover no-repeat;
+    &__descr {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__btn {
+      padding: 25px 14px;
+      font-size: 20px;
+      span {
+        font-size: 22px;
+      }
+    }
+  }
+}
